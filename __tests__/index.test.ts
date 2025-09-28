@@ -13,7 +13,7 @@ describe("merge()", () => {
   test("should merge three arrays correctly", () => {
     const c1 = [1, 3, 5];
     const c2 = [9, 7, 4]; // descending
-    const c3 = [2, 8, 10];
+    const c3 = [2, 8, 10]; // some elements in c3 less than some elements in c1
 
     const result = merge(c1, c2, c3);
     expect(result).toEqual([1,2, 3, 4, 5, 7, 8, 9, 10]);
